@@ -94,7 +94,8 @@ export default function Intro() {
           className="bg-white text-gray-700 p-4 flex
             items-center gap-2 rounded-full border border-black/10 
             focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950"
-            href="" target="_blank"
+          href=""
+          target="_blank"
         >
           <BsLinkedin />
         </a>
@@ -102,7 +103,8 @@ export default function Intro() {
           className="bg-white text-gray-700 p-4 flex
             items-center gap-2 text-[1.20rem] rounded-full border border-black/10 
             focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950"
-            href="" target="_blank"
+          href=""
+          target="_blank"
         >
           <FaGithubSquare />
         </a>

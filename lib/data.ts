@@ -52,13 +52,13 @@ export const experiencesData = [
 export const projectsData = [
   {
     title: "Reservation System",
-    description: "",
+    description: "Full stack reservation and table management system.",
     tags: ["React", "Node", "Express", "Knex", "PostgreSQL"],
     imageUrl: reservation,
   },
   {
     title: "GrubDash",
-    description: "",
+    description: "Full stack food to cart application.",
     tags: ["React", "Node", "Express", "Knex"],
     imageUrl: grubdash,
   },
