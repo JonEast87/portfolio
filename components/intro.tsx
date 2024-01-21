@@ -1,27 +1,17 @@
 "use client";
 
 import Image from "next/image";
-import React, { useEffect } from "react";
-import { motion } from "framer-motion";
+import React from "react";
 import jon from "@/public/jon.jpg";
 import Link from "next/link";
-import { useActiveSectionContext } from "@/context/active-section-context";
-import { useInView } from "react-intersection-observer";
+import { useSectionInView } from "@/lib/hooks";
+import { motion } from "framer-motion";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 
 export default function Intro() {
-  const { ref, inView } = useInView({
-    threshold: 0.5,
-  });
-  const { setActiveSection } = useActiveSectionContext();
-
-  useEffect(() => {
-    if (inView) {
-      setActiveSection("Home");
-    }
-  }, [inView, setActiveSection]);
+  const { ref } = useSectionInView("Home", 0.5);
 
   return (
     <section
@@ -72,13 +62,13 @@ export default function Intro() {
       >
         <span className="font-bold">
           I am a full stack developer specializing in JavaScript/TypeScript. I
-          am familiar with a wide range of JS tech stacks such as React, Express
-          and Next.
+          am familiar with a wide range of JS tech such as React, Express and
+          Next.
         </span>{" "}
         <span className="font-bold">
           I have utilized both JavaScript and backend technologies such as
           MongoDB and PostgreSQL to create full stack works.
-        </span>
+        </span>{" "}
       </motion.h1>
 
       <motion.div
