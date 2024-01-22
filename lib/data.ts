@@ -1,6 +1,4 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import reservation from "@/public/reservation-system.png";
 import grubdash from "@/public/grubdash.png";
@@ -67,17 +65,18 @@ export const projectsData = [
 export const skillsData = [
   "CSS",
   "HTML",
+  "Django",
+  "Express",
+  "Framer Motion",
+  "Git",
+  "Java",
   "JavaScript",
-  "TypeScript",
-  "React",
+  "MongoDB",
   "Next.js",
   "Node.js",
-  "Git",
-  "Tailwind",
-  "MongoDB",
-  "Express",
   "PostgreSQL",
   "Python",
-  "Django",
-  "Framer Motion",
+  "React",
+  "Tailwind",
+  "TypeScript",
 ] as const;
