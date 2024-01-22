@@ -1,14 +1,14 @@
 "use client";
 
-import Image from "next/image";
 import React from "react";
-import jon from "@/public/jon.jpg";
 import Link from "next/link";
-import { useSectionInView } from "@/lib/hooks";
+import Image from "next/image";
+import jon from "@/public/jon.jpg";
 import { motion } from "framer-motion";
-import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
+import { useSectionInView } from "@/lib/hooks";
+import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -56,19 +56,16 @@ export default function Intro() {
       </div>
 
       <motion.h1
-        className="mb-10 mt-4 px-4 text-2x1 font-medium !leading-[1.5] sm:text-4x1"
+        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">
-          I am a full stack developer specializing in JavaScript/TypeScript. I
-          am familiar with a wide range of JS tech such as React, Express and
-          Next.
-        </span>{" "}
-        <span className="font-bold">
-          I have utilized both JavaScript and backend technologies such as
-          MongoDB and PostgreSQL to create full stack works.
-        </span>{" "}
+        <span className="font-bold">Hello, I'm Jonathan.</span> I'm a{" "}
+        <span className="font-bold">full-stack engineer</span> with work done in{" "}
+        <span className="font-bold">JavaScript, Express, Next and React</span>.
+        I am passionate about{" "}
+        <span className="italic">programming and computing</span>. My focus is{" "}
+        <span className="underline">TypeScript and React</span>.
       </motion.h1>
 
       <motion.div
