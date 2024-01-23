@@ -33,7 +33,7 @@ export const links = [
 export const experiencesData = [
   {
     title: "Thinkful",
-    location: "Miami, FL",
+    location: "New York, NY",
     description: "Software Engineering Immersion camp.",
     icon: React.createElement(LuGraduationCap),
     date: "2022",
