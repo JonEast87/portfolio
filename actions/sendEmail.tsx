@@ -1,7 +1,10 @@
 // to denote that this is a server function
 "use server";
 
+import React from "react";
 import { Resend } from "resend";
+import Contact from "@/components/contact";
+import ContactFormEmail from "@/email/contact-form-email";
 import { validateString, getErrorMessage } from "@/lib/utils";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
@@ -30,6 +33,10 @@ export const sendEmail = async (formData: FormData) => {
       subject: "From Portfolio",
       reply_to: senderEmail as string,
       html: message as string,
+      react: React.createElement(ContactFormEmail, {
+        message: message as string,
+        senderEmail: senderEmail as string,
+      }),
     });
   } catch (error: unknown) {
     return {
