@@ -23,10 +23,10 @@ export default function ContactFormEmail({message, senderEmail}: ContactFormEmai
       <Head />
       <Preview>New message from your portfolio site</Preview>
       <Tailwind>
-        <Body>
+        <Body className="bg-gray-100">
           <Container>
-            <Section>
-              <Heading>
+            <Section className="bg-white borderBlack my-10 px-10 py-4 rounded-mb">
+              <Heading className="leading-tight">
                 You received the following message from the contact form
               </Heading>
               <Text>{message}</Text>
