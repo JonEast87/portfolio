@@ -23,7 +23,7 @@ export default function ContactFormEmail({message, senderEmail}: ContactFormEmai
       <Head />
       <Preview>New message from your portfolio site</Preview>
       <Tailwind>
-        <Body className="bg-gray-100">
+        <Body className="bg-gray-100 text-black">
           <Container>
             <Section className="bg-white borderBlack my-10 px-10 py-4 rounded-mb">
               <Heading className="leading-tight">
