@@ -8,7 +8,7 @@ export function useSectionInView(sectionName: SectionName, threshold = 0.75) {
     threshold,
   });
   const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
-
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (inView && Date.now() - timeOfLastClick > 1000) {
       setActiveSection(sectionName);
