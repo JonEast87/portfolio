@@ -2,6 +2,7 @@ import React from "react";
 import { LuGraduationCap } from "react-icons/lu";
 import reservation from "@/public/reservation-system.png";
 import grubdash from "@/public/grubdash.png";
+import reactquiz from "@/public/react_quiz.png";
 
 export const links = [
   {
@@ -48,6 +49,13 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "React Quiz",
+    description:
+      "Simple quiz fetching from opendb.com to display a custom quiz size.",
+    tags: ["React", "TypeScript"],
+    imageUrl: reactquiz,
+  },
   {
     title: "Reservation System",
     description: "Full stack reservation and table management system.",
