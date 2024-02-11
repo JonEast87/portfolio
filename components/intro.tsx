@@ -106,7 +106,7 @@ export default function Intro() {
             items-center gap-2 rounded-full borderBlack 
             focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950
             dark:bg-white/10 dark:text-white/60"
-          href=""
+          href="https://www.linkedin.com/in/joneastin/"
           target="_blank"
         >
           <BsLinkedin />
@@ -116,7 +116,7 @@ export default function Intro() {
             items-center gap-2 text-[1.20rem] rounded-full borderBlack 
             focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950
             dark:bg-white/10 dark:text-white/60"
-          href=""
+          href="https://github.com/JonEast87?tab=repositories"
           target="_blank"
         >
           <FaGithubSquare />
