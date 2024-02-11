@@ -5,7 +5,6 @@ export const validateString = (value: unknown, maxLength: number) => {
   return true;
 };
 
-
 export const getErrorMessage = (error: unknown) => {
   let message: string;
 
