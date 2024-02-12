@@ -77,7 +77,8 @@ export const skillsData = [
   "Express",
   "Framer Motion",
   "Git",
-  "Java",
+  "GitBash",
+  "GitHub",
   "JavaScript",
   "MongoDB",
   "Next.js",
@@ -85,6 +86,8 @@ export const skillsData = [
   "PostgreSQL",
   "Python",
   "React",
+  "Ruby",
+  "Ruby on Rails",
   "Tailwind",
   "TypeScript",
 ] as const;
