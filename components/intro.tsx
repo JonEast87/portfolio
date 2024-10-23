@@ -67,7 +67,7 @@ export default function Intro() {
         <span className="font-bold">JavaScript, Express, Next and React</span>.
         I am passionate about{" "}
         <span className="italic">programming and computing</span>. My focus is{" "}
-        <span className="underline">TypeScript and React</span>.
+        <span className="underline">JavaScript, Python, TypeScript and React</span>.
       </motion.h1>
 
       <motion.div

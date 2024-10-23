@@ -2,9 +2,9 @@ import React from "react";
 import { LuGraduationCap } from "react-icons/lu";
 import reservation from "@/public/reservation-system.png";
 import grubdash from "@/public/grubdash.png";
-// import reactquiz from "@/public/react_quiz.png";
 import trekbag from "@/public/trekbag.png";
 import corpcomment from "@/public/corpcomment.png";
+import ssg from "@/public/static_site_generator.png";
 
 export const links = [
   {
@@ -52,6 +52,13 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "Static_Site_Generator",
+    description:
+      "Make your blog using Markdown stylings to translate it easily into HTML.",
+    tags: ["Python", "CSS", "HTML"],
+    imageUrl: ssg,
+  },
+  {
     title: "Corp Comment",
     description:
       "Love a company? Leave a comment for an easy to use review system!",
@@ -64,13 +71,6 @@ export const projectsData = [
     tags: ["React", "TypeScript", "Zustand", "CSS"],
     imageUrl: trekbag,
   },
-  // {
-  //   title: "React Quiz",
-  //   description:
-  //     "Simple quiz fetching from opendb.com to display a custom quiz size.",
-  //   tags: ["React", "TypeScript"],
-  //   imageUrl: reactquiz,
-  // },
   {
     title: "Reservation System",
     description: "Full stack reservation and table management system.",
