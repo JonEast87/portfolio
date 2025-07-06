@@ -17,7 +17,8 @@ export default function ScrollLinked() {
                     right: 0,
                     height: 10,
                     originX: 0,
-                    backgroundColor: "#ff0088",
+                    backgroundColor: "#f9ac53",
+                    zIndex: 1
                 }}
             />
         </>
