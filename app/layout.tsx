@@ -6,6 +6,7 @@ import Footer from "@/components/footer";
 import { Toaster } from "react-hot-toast";
 import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
+import ScrollLinked from "@/components/scrolllinked";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -36,7 +37,8 @@ export default function RootLayout({
         ></div>
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
-            <Header />
+            {/*<Header />*/}
+            <ScrollLinked />
             {children}
             <Footer />
             <Toaster position="top-right" />

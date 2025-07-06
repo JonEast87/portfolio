@@ -1,7 +1,5 @@
 import React from "react";
 import { LuGraduationCap } from "react-icons/lu";
-import reservation from "@/public/reservation-system.png";
-import grubdash from "@/public/grubdash.png";
 import trekbag from "@/public/trekbag.png";
 import corpcomment from "@/public/corpcomment.png";
 import ssg from "@/public/static_site_generator.png";
@@ -44,9 +42,9 @@ export const experiencesData = [
   {
     title: "Arizona State University",
     location: "Tempe, AZ",
-    description: "Backelors of Science in Graphic Information Technology",
+    description: "Bachelors of Science in Graphic Information Technology",
     icon: React.createElement(LuGraduationCap),
-    date: "2019 - 2024",
+    date: "2021 - 2025",
   },
 ] as const;
 
@@ -70,18 +68,6 @@ export const projectsData = [
     description: "Never forget a thing with TrekBag!",
     tags: ["React", "TypeScript", "Zustand", "CSS"],
     imageUrl: trekbag,
-  },
-  {
-    title: "Reservation System",
-    description: "Full stack reservation and table management system.",
-    tags: ["React", "Node", "Express", "Knex", "PostgreSQL"],
-    imageUrl: reservation,
-  },
-  {
-    title: "GrubDash",
-    description: "Full stack food to cart application.",
-    tags: ["React", "Node", "Express", "Knex"],
-    imageUrl: grubdash,
   },
 ] as const;
 

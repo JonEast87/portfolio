@@ -16,7 +16,7 @@ type ActiveSectionContextType = {
   setTimeOfLastClick: React.Dispatch<React.SetStateAction<number>>;
 };
 
-// This captures where the user is on the page to ensure the navbar is updating properply
+// This captures where the user is on the page to ensure the navbar is updating properly
 export const ActiveSectionContext =
   createContext<ActiveSectionContextType | null>(null);
 
