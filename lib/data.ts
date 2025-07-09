@@ -52,22 +52,25 @@ export const projectsData = [
   {
     title: "Static_Site_Generator",
     description:
-      "Make your blog using Markdown stylings to translate it easily into HTML.",
+      "An easy to use application that takes your Markdown file and translates it into a HTML/CSS static blog site.",
     tags: ["Python", "CSS", "HTML"],
     imageUrl: ssg,
+    projectUrl: "https://github.com/JonEast87/static_site_generator.git"
   },
   {
     title: "Corp Comment",
     description:
-      "Love a company? Leave a comment for an easy to use review system!",
+      "A microblogging site that allows a user to easily leave a comment or review.",
     tags: ["React", "TypeScript", "Zustand", "CSS"],
     imageUrl: corpcomment,
+    projectUrl: "https://corpcomment-jet.vercel.app/",
   },
   {
     title: "TrekBag",
-    description: "Never forget a thing with TrekBag!",
+    description: "The TrekBag is a no non-sense checklist that allows you to intuitively track whatever you need.",
     tags: ["React", "TypeScript", "Zustand", "CSS"],
     imageUrl: trekbag,
+    projectUrl: "https://github.com/JonEast87/trekbag.git",
   },
 ] as const;
 

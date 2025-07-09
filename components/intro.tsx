@@ -45,16 +45,13 @@ export default function Intro() {
       </div>
 
       <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl text-left indent-3"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Jonathan.</span> I'm a{" "}
-        <span className="font-bold">full-stack engineer</span> with work done in{" "}
-        <span className="font-bold">JavaScript, Express, Next and React</span>.
-        I am passionate about{" "}
-        <span className="italic">programming and computing</span>. My focus is{" "}
-        <span className="underline">JavaScript, Python, TypeScript and React</span>.
+        Hello, I'm<span className="font-bold"> Jonathan.</span> I'm a{" "}
+        full-stack engineer with work done in{" "}
+        <span className="font-bold">TypeScript, Express, Next and React</span>.{" "}
       </motion.h1>
 
       <motion.div
@@ -77,16 +74,16 @@ export default function Intro() {
           Contact me here{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />{" "}
         </Link>
-        <a
-          className="group bg-white px-7 py-3 flex
-            items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 
-            active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/jonathan-eastin-resume.pdf"
-          download={true}
-        >
-          Download CV{" "}
-          <HiDownload className="opacity-60 group-hover:translate-y-1 transiton" />
-        </a>
+        {/*<a*/}
+        {/*  className="group bg-white px-7 py-3 flex*/}
+        {/*    items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 */}
+        {/*    active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"*/}
+        {/*  href="/jonathan-eastin-resume.pdf"*/}
+        {/*  download={true}*/}
+        {/*>*/}
+        {/*  Download CV{" "}*/}
+        {/*  <HiDownload className="opacity-60 group-hover:translate-y-1 transiton" />*/}
+        {/*</a>*/}
         <a
           className="bg-white text-gray-700 p-4 flex
             items-center gap-2 rounded-full borderBlack 

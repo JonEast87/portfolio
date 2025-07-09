@@ -2,8 +2,10 @@
 
 import Image from "next/image";
 import React, { useRef } from "react";
+import Link from "next/link";
 import { projectsData } from "@/lib/data";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform} from "framer-motion";
+import clsx from "clsx";
 
 // Because the data object was already defined in data.ts using the typeof structure of the
 // objects will implicity declare the needed types
@@ -14,6 +16,7 @@ export default function Project({
   description,
   tags,
   imageUrl,
+    projectUrl
 }: ProjectProps) {
   // this is our target for the useScroll hook
   const ref = useRef<HTMLDivElement>(null);
@@ -35,7 +38,7 @@ export default function Project({
       className="group mb-3 sm:mb-8 last:mb-0"
     >
       <section
-        className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] 
+        className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem]
     hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20"
       >
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem] sm:group-odd:mr-[18rem]">
@@ -43,6 +46,12 @@ export default function Project({
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
             {description}
           </p>
+          <Link
+              className={clsx(
+                  "flex w-full justify-left hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300"
+              )} href={projectUrl}>
+            Project Link
+          </Link>
           <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
             {tags.map((tag, index) => (
               <li

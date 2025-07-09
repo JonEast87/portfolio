@@ -11,7 +11,7 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+      className="mb-28 max-w-[45rem] leading-8 sm:mb-40 scroll-mt-28 text-left indent-3"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
@@ -35,8 +35,7 @@ export default function About() {
         games that kept me occupied. Programming was always interesting to me
         but something I felt was a little too heady for me. It wasn't until I
         was pushed by a family member to give at least one tutorial a try in
-        JavaScript that I realized that I can certainly{" "}
-        <span className="underline">do this as a career</span>.
+        JavaScript that I realized that I can certainly{" "}do this as a career.
       </p>
     </motion.section>
   );
