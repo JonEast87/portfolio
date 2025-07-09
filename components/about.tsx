@@ -26,8 +26,8 @@ export default function About() {
         degree in{" "}
         <span className="font-bold">Graphic Information Technology</span>. I
         have been dedicated to learning multiple languages such as{" "}
-        <span className="italic">JavaScript/TypeScript, Python and Java</span>{" "}
-        used in web development. I am eager to join a professional team to begin
+        <span className="italic">TypeScript, Python and Java</span>{" "}
+        that are used in web development. I am eager to join a professional team to begin
         my foray into the tech world.
       </p>
       <p className="mb-3">
