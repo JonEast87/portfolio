@@ -44,7 +44,14 @@ export const experiencesData = [
     location: "Tempe, AZ",
     description: "Bachelors of Science in Graphic Information Technology",
     icon: React.createElement(LuGraduationCap),
-    date: "2021 - 2025",
+    date: "2022 - 2026",
+  },
+  {
+    title: "Arizona State University",
+    location: "Tempe, AZ",
+    description: "Bachelors of Science in Graphic Information Technology",
+    icon: React.createElement(LuGraduationCap),
+    date: "2026 - 2027",
   },
 ] as const;
 
